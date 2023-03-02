@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+/* import Login from './auth/Login'; */
+/* import ForgotPassword from './auth/forgot_password'; */
+import VerifyOtp from './auth/verify_otp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <VerifyOtp/>
+    {/* <Login/> */}
+    {/* <ForgotPassword/>  */}
+
+    </>
   );
 }
 
