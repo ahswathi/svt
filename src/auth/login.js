@@ -4,8 +4,9 @@ import '../auth/login.css';
 function Login() {
   return (
     <div className="auth-form-login w-[421px] h-[466px] ">
-   <form className=''>
-     <div className='logo w-[421px] h-[115px] '>LOGO</div>
+   <form className='rounded-[10px]'>
+     <div className='logo w-[421px] h-[115px] text-6xl	flex justify-center items-center font-extrabold
+     bg-[#294F83] text-[#FFFFFF] rounded-t-lg leading-{70px}'>LOGO</div>
      <div className='heading pt-6 pb-8 '> LOGIN TO DASHBOARD</div>
       <div className='form-wrapper grid justify-items-center'>
           <div className='input-wrap w-[340px] h-[45px] text-lg rounded flex items-center pl-4 mb-6'>

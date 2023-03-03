@@ -1,15 +1,16 @@
 import './App.css';
-/* import Login from './auth/Login'; */
+import AddPartner from './soudhapages/AddPartner';
+/* import Login from './auth/login'; */
 /* import ForgotPassword from './auth/forgot_password'; */
-import VerifyOtp from './auth/verify_otp';
+/* import VerifyOtp from './auth/verify_otp'; */
 
 function App() {
   return (
     <>
-    <VerifyOtp/>
     {/* <Login/> */}
+    {/* <VerifyOtp/> */}
     {/* <ForgotPassword/>  */}
-
+      <AddPartner />
     </>
   );
 }
