@@ -4,25 +4,27 @@ import React, { useState } from "react";
 function Consignment() {
     const [Date,setDate]=useState('')
     const [Oil,setOil]=useState('')
+    const [newoil,setnewoil]=useState('')
     const [Quantity,setQuantity]=useState('')
     const [Rate,setRate]=useState('')
     const [Payment,setPayment]=useState('')
     const [error,setError]=useState(false)
+    const [show, toggleShow] = useState(false);
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        if(Date.length === 0 ||Oil.length === 0  ||  Quantity.length === 0 || Rate.length === 0 || Payment.length === 0){
+        if(Date.length === 0 || Oil.length === 0  ||  newoil.length === 0  || Quantity.length === 0 || Rate.length === 0 || Payment.length === 0){
             setError(true)
         }
-        if(Date&&Oil&&Quantity&&Oil&&Rate&&Payment)
+        if(Date&&Oil&&Quantity&&Oil&&Rate&&Payment&&newoil)
         {
-        console.log("Date: ",Date,"Oil: ",Oil,"Quantity: ",Quantity,"Rate: ",Rate,"Payment: ",Payment)
+        console.log("Date: ",Date,"Oil: ",Oil,"newoil:",newoil,"Quantity: ",Quantity,"Rate: ",Rate,"Payment: ",Payment)
         }
     }
   return (
 
 
-  <div className="auth-form-login w-[450px] h-[638.37px] bg-white rounded-lg mt-10 ml-10 ">
+  <div className="auth-form-login w-[450px] h-[718.35px] bg-white rounded-lg mt-10 ml-10 ">
    <form onSubmit={handleSubmit} className='rounded-[10px]'>
      <div className='logo text-xl	leading-[23px]	 mb-8 w-[450px] h-[60px] 	flex justify-center items-center font-extrabold
      bg-[#A9B9CD] text-[#000000CC] rounded-t-lg font-medium'>BOOK NEW PURCHASE CONSIGNMENT</div>
@@ -54,13 +56,27 @@ function Consignment() {
               </select>
             </div>
           </div>
-          <div className='circle flex  bg-[#16ABE5] w-[35px] h-[35px] rounded-[32px] ml-4 mt-1'>
-              <div className='text-white text-[26px] font-medium leading-[18px] pt-2 pl-[10px]'>+</div>
-          </div>
+          <button className='circle flex  bg-[#16ABE5] w-[35px] h-[35px] rounded-[32px] ml-4 mt-1'>
+       
+              <div  className='text-white text-[26px] font-medium leading-[18px] pt-2 pl-[10px]'
+              onClick={() => toggleShow(!show)}> {show ? ' -' : '+'}</div>
+          </button>
         </div>
       </div>
 
-          {error&&Quantity.length<=0?
+      
+          {error&&newoil.length<=0?
+            <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal	text-left  mt-8 pl-8">
+                  New Oil type*</label>:""}{show &&
+        <div className='form-wrapper  ml-7 '>
+            <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
+                <input type="text" placeholder='Enter new oil type'
+                    className=" text-xs font-normal	leading-[14px] text-[#00000080] "
+                    onChange={e=>setnewoil(e.target.value)} />
+            </div>
+      </div>}
+
+      {error&&Quantity.length<=0?
             <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal	text-left  mt-8 pl-8">
                   Booked Quantity in kg*</label>:""}
         <div className='form-wrapper  ml-7 '>
