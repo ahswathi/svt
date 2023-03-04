@@ -4,7 +4,7 @@
     padding: 0px;
 }
 body{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #F0F0EF;
     display: flex;
     min-height: 100vh;
     align-items: center;
