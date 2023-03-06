@@ -23,14 +23,14 @@ function AddPartner() {
 
     <div className="auth-form-login w-[421.21px] h-[532.84px] bg-white rounded-lg mt-10 ml-10 ">
    <form onSubmit={handleSubmit} className='rounded-[10px]'>
-     <div className='logo mb-8 w-[421px] h-[60px] text-[20px] flex justify-start items-center pl-10  font-extrabold
-     bg-[#A9B9CD] text-[#000000CC] rounded-t-lg leading-[70px] font-medium'>ADD SOUDHA PARTNER</div>
+     <div className='text-xl	leading-[23px]	 mb-8 w-[421.21px] h-[60px] 	flex justify-center items-center font-extrabold
+     bg-[#A9B9CD] text-[#000000CC] rounded-t-lg font-medium'>ADD SOUDHA PARTNER</div>
         
           {error&&partnerName.length<=0?
-            <label className="text-sm text-[#000000CC] leading-[14px] font-regular text-left  mt-8 pl-11">
+            <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal text-left  mt-8 pl-11">
                   Partner Name*</label>:""}
         <div className='form-wrapper  grid justify-items-center'>
-            <div className='input-wrap w-[340px] h-[45px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
+            <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
                 <input type="text"  placeholder='Enter Partner name'
                     className=" text-xs font-regular text-[#00000080] "
                     onChange={e=>setpartnerName(e.target.value)} />
@@ -38,10 +38,10 @@ function AddPartner() {
         </div>
 
           {error&&location.length<=0?
-            <label className="text-sm text-[#000000CC] leading-[14px] font-regular text-left  mt-4  pl-11">
+            <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal text-left  mt-4  pl-11">
                   Location*</label>:""}
         <div className='form-wrapper  grid justify-items-center'>
-            <div className='input-wrap w-[340px] h-[45px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
+            <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
                 <input type="text" placeholder='Enter Location'
                     className=" text-xs font-regular text-[#00000080] "
                     onChange={e=>setlocation(e.target.value)} />
@@ -49,10 +49,10 @@ function AddPartner() {
       </div>
       
         {error&&number.length<=0?
-            <label className="text-sm text-[#000000CC] leading-[14px] font-regular text-left  mt-4  pl-11">
+            <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal text-left  mt-4  pl-11">
                   Whatsapp Number*</label>:""}
       <div className='form-wrapper  grid justify-items-center'>
-            <div className='input-wrap w-[340px] h-[45px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
+            <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
                 <input type="phone" placeholder='Enter Whatsapp number'
                     className=" text-xs font-regular text-[#00000080] "
                     onChange={e=>setnumber(e.target.value)} />
@@ -60,12 +60,12 @@ function AddPartner() {
       </div>
 
         {error&&status.length<=0?
-            <label className="text-sm text-[#000000CC] leading-[14px] font-regular text-left mt-4  pl-11">
+            <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal text-left mt-4  pl-11">
                   Satuts*</label>:""}
       <div className='form-wrapper  grid justify-items-center'>
-      <div className='input-wrap w-[340px] h-[45px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-4'>
+      <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-4'>
        <div className='select-wrap '>
-          <select  onChange={e=>setstatus(e.target.value)} className=" w-[300px] text-xs font-regular  ">
+          <select  onChange={e=>setstatus(e.target.value)} className=" w-[320px] text-xs font-regular  ">
               <option selected disabled>Select</option>
               <option value="active">Active</option>
               <option value="inactive">Inactive</option>

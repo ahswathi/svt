@@ -40,9 +40,10 @@ function ReceivedSoudha() {
             <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal	text-left  mt-8 pl-1">
                   Date*</label>:""}
         <div className='form-wrapper'>
-            <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
+        <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
+                <img src='Calendar.png'/>
                 <input type="date"  value="2023-01-03" placeholder='Enter Partner name'
-                    className=" text-xs font-regular text-[#00000080] "
+                    className="pl-3 w-[304px] text-xs font-regular text-[#00000080] "
                     onChange={e=>setDate(e.target.value)} />
             </div>
         </div>

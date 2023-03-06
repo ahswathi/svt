@@ -26,7 +26,7 @@ function Consignment() {
 
   <div className="auth-form-login w-[450px] h-[718.35px] bg-white rounded-lg mt-10 ml-10 ">
    <form onSubmit={handleSubmit} className='rounded-[10px]'>
-     <div className='logo text-xl	leading-[23px]	 mb-8 w-[450px] h-[60px] 	flex justify-center items-center font-extrabold
+     <div className='text-xl	leading-[23px]	 mb-8 w-[450px] h-[60px] 	flex justify-center items-center font-extrabold
      bg-[#A9B9CD] text-[#000000CC] rounded-t-lg font-medium'>BOOK NEW PURCHASE CONSIGNMENT</div>
         
           {error&&Date.length<=0?
@@ -34,8 +34,9 @@ function Consignment() {
                   Booking Date*</label>:""}
         <div className='form-wrapper  ml-7 '>
             <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
+                <img src='Calendar.png'/>
                 <input type="date"  value="2023-01-03" placeholder='Enter Partner name'
-                    className=" text-xs font-regular text-[#00000080] "
+                    className="pl-3 w-[304px] text-xs font-regular text-[#00000080] "
                     onChange={e=>setDate(e.target.value)} />
             </div>
         </div>
@@ -56,19 +57,23 @@ function Consignment() {
               </select>
             </div>
           </div>
-          <button className='circle flex  bg-[#16ABE5] w-[35px] h-[35px] rounded-[32px] ml-4 mt-1'>
-       
-              <div  className='text-white text-[26px] font-medium leading-[18px] pt-2 pl-[10px]'
-              onClick={() => toggleShow(!show)}> {show ? ' -' : '+'}</div>
+          <button className='circle flex  bg-[#16ABE5] w-[35px] h-[35px] rounded-[32px] ml-4 mt-1'   onClick={() => toggleShow(!show)}>
+       {show ? 
+              <div  className='text-white items-center text-[26px] font-medium leading-[18px] pt-2 pl-[12px]'
+            >-</div> : <div  className='text-white items-center text-[26px] font-medium leading-[18px] pt-2 pl-[10px]'
+            >+</div>}
           </button>
         </div>
       </div>
 
       
-          {error&&newoil.length<=0?
-            <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal	text-left  mt-8 pl-8">
-                  New Oil type*</label>:""}{show &&
-        <div className='form-wrapper  ml-7 '>
+         
+      {show &&
+      
+        <div  className='form-wrapper  ml-7 '>
+           {error&&newoil.length<=0?
+        <label className="text-sm text-[#000000CC] leading-[16.41px] font-normal	text-left  mt-8 pl-1">
+              New Oil type*</label>:""}
             <div className='input-wrap w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6'>
                 <input type="text" placeholder='Enter new oil type'
                     className=" text-xs font-normal	leading-[14px] text-[#00000080] "
