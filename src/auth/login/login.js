@@ -1,15 +1,14 @@
 import React from 'react'
-import '../auth/login.css';
+import '../login/login.css';
 
 function Login() {
   return (
-    <div className="auth-form-login w-[421.21px] h-[466.18px] bg-white rounded-lg  ">
-   <form className='rounded-[10px]'>
-     <div className=' w-[421.21px] h-[115px] text-6xl	flex justify-center items-center font-extrabold
-     bg-[#294F83] text-[#FFFFFF] rounded-t-lg leading-{70px}'>LOGO</div>
-     <div className=' pt-6 pb-8 text-xl font-medium	leading-[23.44px] text-[#00000099] align-top  text-center '> LOGIN TO DASHBOARD</div>
-      <div className='form-wrapper grid justify-items-center'>
-          <div className='input-wrap leading-5	tracking-[0.5px] w-[340px] h-[45px] text-sm	 border-[#0000004D] rounded  flex items-center pl-4 mb-6'>
+    <div className="login-form ">
+   <form className=''>
+     <div className='login-title'>LOGO</div>
+     <div className='login-subtitle '> LOGIN TO DASHBOARD</div>
+      <div className='form-wrapper'>
+          <div className='input-wrap login-first-field '>
            <input type="text" name="name" placeholder='USERNAME'/>
           </div>
           <div className='icon-wrap'>
@@ -19,8 +18,8 @@ function Login() {
            </svg>
           </div>
       </div>
-      <div className='form-wrapper grid justify-items-center'>
-      <div className='input-wrap leading-5	tracking-[0.5px] w-[340px] h-[45px] text-sm	 border-[#0000004D] rounded  flex items-center pl-4 mb-10'>
+      <div className='form-wrapper'>
+      <div className='input-wrap login-second-field '>
           <input type="password" name="password" placeholder='PASSWORD'/>
           </div>
           <div className='icon-wrap'>
@@ -30,10 +29,10 @@ function Login() {
             </svg>
           </div>
       </div>
-      <div className='button-wrap'>
-        <button className='w-[340px] h-[45px] text-base	leading-5	font-semibold	bg-[#16ABE5] 	text-[#FFFFFF] rounded'>LOGIN</button>
+      <div className='login-button-wrap'>
+        <button className='login-button'>LOGIN</button>
       </div>
-      <div className='pt-6 pb-8 text-[#00000099] text-sm text-right leading-[16.41px] font-medium	pr-10'>Forgot password?</div>
+      <div className='login-button-subtitle '>Forgot password?</div>
 
     </form>
     </div>

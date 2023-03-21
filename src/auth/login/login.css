@@ -28,15 +28,13 @@ body{
 button{
     background-color: #16ABE5;
 }
-.logo{
-    font-family: 'Roboto';
-    font-style: semibold;
-}
+
 .form-wrapper{
      position: relative;
+     @apply grid justify-items-center
     }
 
-.button-wrap{
+.login-button-wrap{
     font-family: 'Roboto';
     font-style: semibold;
     font-size: 16px;
@@ -74,4 +72,29 @@ input:focus{
     line-height: 14px;
     vertical-align: top;
     font-weight: 500;
+}
+form{
+    @apply rounded-[10px]
+}
+.login-form{
+    @apply w-[421.21px] h-[466.18px] bg-white rounded-lg  
+}
+.login-title{
+    font-style: semibold;
+   @apply w-[421.21px] h-[115px] text-6xl	flex justify-center items-center font-extrabold bg-[#294F83] text-[#FFFFFF] rounded-t-lg leading-[70px]
+}
+.login-subtitle{
+   @apply pt-6 pb-8 text-xl font-medium	leading-[23.44px] text-[#00000099] align-top  text-center 
+}
+.login-first-field{
+    @apply leading-5	tracking-[0.5px] w-[340px] h-[45px] text-sm	 border-[#0000004D] rounded  flex items-center pl-4 mb-6
+}
+.login-second-field{
+    @apply leading-5	tracking-[0.5px] w-[340px] h-[45px] text-sm	 border-[#0000004D] rounded  flex items-center pl-4 mb-10
+}
+.login-button{
+    @apply w-[340px] h-[45px] text-base	leading-5	font-semibold	bg-[#16ABE5] 	text-[#FFFFFF] rounded
+}
+.login-button-subtitle{
+    @apply pt-6 pb-8 text-[#00000099] text-sm text-right leading-[16.41px] font-medium	pr-10
 }

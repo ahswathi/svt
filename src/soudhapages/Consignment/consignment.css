@@ -1,0 +1,113 @@
+.consignment-form{
+  @apply w-[450px] h-[718.35px] bg-white rounded-lg mt-10 ml-10 
+}
+form{
+  @apply rounded-[10px]
+}
+.consignment-title{
+  @apply text-xl	leading-[23px]	 mb-8 w-[450px] h-[60px] 	flex justify-center items-center font-extrabold
+  bg-[#A9B9CD] text-[#000000CC] rounded-t-lg font-medium
+}
+.consignment-label{
+  @apply text-sm text-[#000000CC] leading-[16.41px] font-normal	text-left  mt-8 pl-8
+}
+.consignment-newlabel{
+  @apply text-sm text-[#000000CC] leading-[16.41px] font-normal	text-left  mt-8 pl-1
+}
+.consignment-input-field{
+  @apply w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-4 mb-6
+}
+.consignment-select-field{
+  @apply w-[348.33px] h-[44px] border-[#0000004D] bg-[#F0F0EF] rounded flex items-center pl-3 mb-6
+}
+.select-text{
+  @apply w-[320px]  text-xs font-normal	leading-[14px] text-[#00000080] 
+}
+.consignment-form-wrapper{
+  @apply  ml-7 
+}
+.consignment-input-text{
+  @apply pl-3 w-[304px] text-xs  text-[#00000080]
+}
+.consignment-circle{
+  @apply flex  bg-[#16ABE5] w-[35px] h-[35px] rounded-[32px] ml-4 mt-1
+}
+.minusicon{
+  @apply text-white items-center text-[26px] font-medium leading-[18px] pt-2 pl-[12px]
+}
+.plusicon{
+  @apply text-white items-center text-[26px] font-medium leading-[18px] pt-2 pl-[10px]
+}
+.consignment-button-wrap{
+  @apply flex justify-end mr-[74px] mt-4
+}
+.close-button{
+  @apply w-[119px] h-[38px] bg-[#00000033] flex items-center mr-4 rounded
+}
+.close-button-text{
+  @apply  text-sm ml-10  font-medium text-black
+}
+.submit-button{
+  @apply  w-[119px] h-[38px] text-sm rounded font-medium text-white bg-[#16ABE5]
+}
+
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+.input-wrap{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.select-wrap{
+    position: relative;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    color: rgba(0, 0, 0, 0.5);
+}
+input, select{
+    background-color: transparent;
+}
+input[type=file] {
+    color: transparent !important;
+    outline: none;
+}
+input::file-selector-button {
+    background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+   display: none;
+}
+::-webkit-datetime-edit-text {
+    opacity:0;
+  }
+ 
+input[type="date"] {
+    position: relative;
+    padding: 10px;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+  
+  input[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'FontAwesome';
+    content: '\f107';
+    font-weight: 900;
+    /* This is the calendar icon in FontAwesome */
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    color: #00000080;
+  }

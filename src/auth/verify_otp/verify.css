@@ -10,12 +10,12 @@ body{
     align-items: center;
     justify-content: center;
 }
-.auth-form-login{
+.verify-form{
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
-    
+    @apply w-[421px] h-[354px] 
 }
-.heading{
+.verify-heading{
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Roboto';
@@ -25,6 +25,7 @@ body{
     text-align: center;
     vertical-align: top;
     font-weight: 400;
+    @apply pt-2
 }
 button{
     background-color: #16ABE5;
@@ -32,7 +33,7 @@ button{
 form{
     border-radius: 10px;
 }
-.logo{
+.verify-title{
     color: rgba(255, 255, 255, 1);
     background-color: rgba(41, 79, 131, 1);
     font-family: 'Roboto';
@@ -42,12 +43,14 @@ form{
     text-align: center;
     font-weight: 500;
     border-radius: 10px 10px 0 0;
+    @apply  w-[421px] h-[115px] pt-8
 }
-.form-wrapper{
+.verify-form-wrapper{
      position: relative;
+     @apply grid justify-items-center pt-10
     }
 
-.button-wrap{
+.verify-button-wrap{
     font-family: 'Roboto';
     font-style: semibold;
     font-weight: 500;
@@ -78,4 +81,13 @@ input:focus{
     font-size: 14px;
     line-height: 16px;
     vertical-align: top;
+}
+.verify-button{
+    @apply w-[340px] h-[45px] text-lg rounded font-semibold	 leading-5 bg-[#16ABE5]		text-[#FFFFFF]
+}
+.verify-button-subtitle{
+    @apply pt-6 pb-8 text-center text-sm	 font-semibold text-[#16ABE5]	leading-[16.41px]
+}
+.verify-field{
+    @apply leading-5	tracking-[0.5px] w-[340px] h-[45px] text-sm	 border-[#0000004D] rounded  flex items-center pl-4 mb-6
 }
